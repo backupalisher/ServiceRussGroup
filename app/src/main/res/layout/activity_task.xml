@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.TaskActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--tools:text="Название компании"-->
+            <!--android:id="@+id/companyNameText"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Заявка:"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    tools:text="1"
+                    android:textColor="#105ff9"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:id="@+id/taskIDTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Компания"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                tools:text="Название компании"
+                android:id="@+id/companyName"
+                android:textColor="#0f0f0f"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                tools:text="20.06.2018"
+                android:id="@+id/dateDeliveryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                tools:text="от 10:00 до 14:00"
+                android:id="@+id/timeDeliveryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                tools:text="Позвонить за час"
+                android:id="@+id/timeToCallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Адрес:"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:textColor="#105ff9"
+                tools:text="Адрес"
+                android:id="@+id/addressText"
+                android:autoLink="map"
+                android:linksClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Контактные данные:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                tools:text="Контактное лицо"
+                android:id="@+id/faceNameText"
+                android:textColor="#0f0f0f"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                tools:text="+79264150022"
+                android:visibility="gone"
+                android:id="@+id/phoneJobText"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/mobileText"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/additionalText"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Ответственный менеджер"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/managerName"
+                android:textColor="#0f0f0f"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Устройство"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                tools:text="Устройство"
+                android:id="@+id/deviceName"
+                android:textColor="#105ff9"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Описание:"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/taskEditText"
+                android:hint="Описание"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Комментарии:"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/descroptionEditText"
+                android:hint="Комментарии"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/okButton"
+                    android:text="Выполнено"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/circle_button_green"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:text="Откланено"
+                    android:background="@drawable/circle_button_red"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/taskLinear"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                tools:text="1"
+                android:id="@+id/taskIDTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/company_name"
+                tools:text="Название компании типа"
+                android:textStyle="bold"
+                android:textColor="#00008b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textSize="20sp"
+                autofit:minTextSize="16sp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/company_address"
+                tools:text="г. Москва, 1-й Магистральный проезд, д.11, стр.1"
+                android:textStyle="bold"
+                android:textColor="#ffa500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textSize="15sp"
+                autofit:minTextSize="14sp"
+                android:linksClickable="true"
+                android:autoLink="map"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/date"
+                    tools:text="Дата выезда: 11.12.2018"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/status"
+                    tools:text="В ожидании"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/contact_name"
+                    android:text="Сергей"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="15sp"
+                    autofit:minTextSize="14sp" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/work_name"
+                    android:text="Сис. администратор"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="2"
+                    android:textSize="15sp"
+                    autofit:minTextSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/phone_number"
+                    android:text="+7 (926) 550-00-25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textColor="#00bfff"
+                    android:textSize="16sp"
+                    autofit:minTextSize="12sp"
+                    android:linksClickable="true"
+                    android:autoLink="phone"/>
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/phone_number2"
+                    android:text="+7 (915) 684-22-25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textColor="#00bfff"
+                    android:textSize="16sp"
+                    autofit:minTextSize="12sp"
+                    android:linksClickable="true"
+                    android:autoLink="phone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
